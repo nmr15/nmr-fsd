@@ -10,9 +10,6 @@
   <title>Day 9 Exercise: Ecommerce Website</title>
 </head>
 <body>
-  <header>
-
-  </header>
   <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -37,9 +34,41 @@
             <a class="nav-link fw-bold" href="contactus.html">Contact Us</a>
           </li>
         </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
+
+  <div class="modal" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="modalEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="modalEmail">
+            </div>
+            <div class="mb-3">
+              <label for="modalPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="modalPassword">
+            </div>
+            <button type="submit" class="btn bg-main-red">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <main>
     <section class="section__banner">
       <div class="banner__img text-center my-5">
