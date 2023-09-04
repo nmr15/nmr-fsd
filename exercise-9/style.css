@@ -3,6 +3,18 @@ body
   font-family: "Roboto";
 }
 
+.list-group a
+{
+  color: #000;
+  text-decoration: none;
+}
+
+.card-header
+{
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .bg-main-red
 {
   color: #fff !important;
@@ -17,6 +29,11 @@ body
 .ht-1000
 {
   height: 900px !important;
+}
+
+.ht-667
+{
+  height: 667.89px !important;
 }
 
 .of
