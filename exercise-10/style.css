@@ -1,0 +1,69 @@
+body
+{
+  font-family: "Roboto";
+}
+
+.list-group a
+{
+  color: #000;
+  text-decoration: none;
+}
+
+.card-header
+{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bg-main-red
+{
+  color: #fff !important;
+  background-color: #A73121 !important;
+}
+
+.bg-sub-red
+{
+  background-color: #f3c7be;
+}
+
+.ht-1000
+{
+  height: 900px !important;
+}
+
+.ht-667
+{
+  height: 667.89px !important;
+}
+
+.of
+{
+  object-fit: cover !important;
+}
+
+.banner__img
+{
+  position: relative;
+}
+
+.banner__btn
+{
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+}
+
+footer
+{
+  background-color: #f0f3f2;
+}
+
+.footer__heading, .footer__links a
+{
+  color: #21313c;
+}
+
+.footer__links a
+{
+  text-decoration: none;
+}
