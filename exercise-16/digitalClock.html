@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+</head>
+<body>
+  <div id="innerdiv"> This should change - inner html</div>
+  <div id="reactdiv"> This should change - react div</div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+  <script>
+    let root = ReactDOM.createRoot(document.getElementById('reactdiv'));
+    let renderThis = () => {
+      
+      //Inner HTML
+      let str = `<h2> Vanilla JS </h2><input/> <br>Current DateTime is ${new Date()} <hr>`;
+      document.getElementById('innerdiv').innerHTML = str;
+
+
+      // React
+      let MyReactComp = React.createElement('div', {},
+        React.createElement("h2", {}, " React Date Time",
+          React.createElement("input", {}, null),
+          React.createElement("p", {}, new Date().toString())));
+      root.render(MyReactComp);
+    }
+    setInterval(renderThis, 1000);
+  </script>
+
+
+
+
+</body>
+</html>
